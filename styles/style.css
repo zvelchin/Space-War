@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Plaguard";
+  src: url(../font/Plaguard.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  background: url("../img/background.png") repeat;
+  animation: space 35s linear infinite;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plaguard";
+}
+
+#pause {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 30px;
+}
+
+.btn-outline-primary.active {
+  display: none;
+}
+
+@keyframes space {
+  100% {
+    background-position: 0px 3000px;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+}
+
+.glitch {
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  position: relative;
+  padding: 30px;
+}
+
+.box .glitch:before,
+.box .glitch:after {
+  content: "Space War";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.box .glitch:before {
+  left: 3px;
+  text-shadow: -3px 0 red;
+  animation: glitch-before 2s linear 0s infinite alternate;
+}
+
+.box .glitch:after {
+  left: -3px;
+  text-shadow: -3px 0 blue;
+  animation: glitch-after 2s linear 0s infinite alternate;
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(45px, 350px, 56px, 30px);
+  }
+
+  5% {
+    clip: rect(102px, 350px, 52px, 30px);
+  }
+
+  10% {
+    clip: rect(30px, 350px, 93px, 30px);
+  }
+
+  15% {
+    clip: rect(122px, 350px, 91px, 30px);
+  }
+
+  20% {
+    clip: rect(52px, 350px, 69px, 30px);
+  }
+
+  25% {
+    clip: rect(89px, 350px, 141px, 30px);
+  }
+
+  30% {
+    clip: rect(80px, 350px, 24px, 30px);
+  }
+
+  35% {
+    clip: rect(21px, 350px, 3px, 30px);
+  }
+
+  40% {
+    clip: rect(87px, 350px, 13px, 30px);
+  }
+
+  45% {
+    clip: rect(5px, 350px, 106px, 30px);
+  }
+
+  50% {
+    clip: rect(138px, 350px, 115px, 30px);
+  }
+
+  55% {
+    clip: rect(91px, 350px, 105px, 30px);
+  }
+
+  60% {
+    clip: rect(92px, 350px, 25px, 30px);
+  }
+
+  65% {
+    clip: rect(69px, 350px, 108px, 30px);
+  }
+
+  70% {
+    clip: rect(67px, 350px, 20px, 30px);
+  }
+
+  75% {
+    clip: rect(42px, 350px, 46px, 30px);
+  }
+
+  80% {
+    clip: rect(94px, 350px, 48px, 30px);
+  }
+
+  85% {
+    clip: rect(11px, 350px, 101px, 30px);
+  }
+
+  90% {
+    clip: rect(135px, 350px, 104px, 30px);
+  }
+
+  95% {
+    clip: rect(128px, 350px, 69px, 30px);
+  }
+
+  100% {
+    clip: rect(26px, 350px, 116px, 30px);
+  }
+}
+
+@keyframes glitch-after {
+  0% {
+    clip: rect(137px, 350px, 103px, 30px);
+  }
+
+  5% {
+    clip: rect(29px, 350px, 77px, 30px);
+  }
+
+  10% {
+    clip: rect(148px, 350px, 150px, 30px);
+  }
+
+  15% {
+    clip: rect(60px, 350px, 65px, 30px);
+  }
+
+  20% {
+    clip: rect(99px, 350px, 54px, 30px);
+  }
+
+  25% {
+    clip: rect(104px, 350px, 11px, 30px);
+  }
+
+  30% {
+    clip: rect(45px, 350px, 82px, 30px);
+  }
+
+  35% {
+    clip: rect(34px, 350px, 10px, 30px);
+  }
+
+  40% {
+    clip: rect(1px, 350px, 11px, 30px);
+  }
+
+  45% {
+    clip: rect(119px, 350px, 93px, 30px);
+  }
+
+  50% {
+    clip: rect(19px, 350px, 20px, 30px);
+  }
+
+  55% {
+    clip: rect(26px, 350px, 84px, 30px);
+  }
+
+  60% {
+    clip: rect(63px, 350px, 44px, 30px);
+  }
+
+  65% {
+    clip: rect(21px, 350px, 143px, 30px);
+  }
+
+  70% {
+    clip: rect(45px, 350px, 132px, 30px);
+  }
+
+  75% {
+    clip: rect(65px, 350px, 105px, 30px);
+  }
+
+  80% {
+    clip: rect(75px, 350px, 124px, 30px);
+  }
+
+  85% {
+    clip: rect(101px, 350px, 16px, 30px);
+  }
+
+  90% {
+    clip: rect(20px, 350px, 116px, 30px);
+  }
+
+  95% {
+    clip: rect(133px, 350px, 102px, 30px);
+  }
+
+  100% {
+    clip: rect(9px, 350px, 147px, 30px);
+  }
+}
+
+#play {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#description {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  color: white;
+  background: black;
+  opacity: 0.5;
+}
+
+#github {
+  position: absolute;
+  font-size: 50px;
+  right: 50px;
+  bottom: 0;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}
+
+li > i {
+  color: white;
+}
+
+.wrapper.active {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
